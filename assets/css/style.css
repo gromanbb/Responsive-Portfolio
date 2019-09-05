@@ -9,7 +9,7 @@ body {
   color: #777;
 
   /* Visual */
-  background: url("../images/concrete_seamless.png");
+  background: url("../images/pixel_weave.png");
 }
 
 * {
@@ -110,7 +110,9 @@ h3 {
   float: left;
 
   /* Box-model */
-  width: 250px;
+  width: 350px;
+  /*OJO width: 100%; */
+  /* max-width: 350px; */
   height: 90px;
 
   /* Typography */
@@ -278,6 +280,8 @@ main {
 
   /* Box-model */
   width: 274px;
+  /*OJO width: 100%; */
+  /* max-width: 274px; */
   margin: 20px 0 25px;
   overflow: auto;
 }
@@ -324,6 +328,8 @@ main {
 
   /* Box-model */
   width: 200px;
+  /*OJO width: 100%; */
+  /* max-width: 200px; */
   height: auto;
   margin-top: 10px;
 
@@ -382,5 +388,68 @@ input[type=submit] {
 
   /* Visual */
   border: 0 none;
+}
 
+/* Screen Sizes up to 980px */
+@media screen and (max-width: 980px) {
+  body {
+    background-color: #333;
+  }
+
+  .wrapper {
+    /* Box-model */
+    width: 100%;
+    padding: 20px;
+  }
+
+  .container,
+  .main-section,
+  .work {
+    width: 100%;
+  }
+}
+
+/* Screen Sizes up to 768px */
+@media screen and (max-width: 768px) {
+  body {
+    background-color: #333;
+  }
+
+  .wrapper {
+    /* Box-model */
+    width: 100%;
+    padding: 20px;
+  }
+
+  .container,
+  .main-section,
+  .work {
+    width: 100%;
+  }
+}
+
+/* Screen Sizes up to 640px */
+@media screen and (max-width: 640px) {
+  body {
+    background-color: #333;
+  }
+
+  .wrapper {
+    /* Box-model */
+    width: 100%;
+    padding: 20px;
+  }
+
+  .container,
+  .main-section,
+  .work {
+    width: 100%;
+  }
+
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
 }
